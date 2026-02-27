@@ -1,5 +1,5 @@
 fun main (){
-    val samsung = samsumg()
+    val samsung = Samsumg()
     samsung.display()
     println(samsung.name)
     val phone = BasicMobile("basic phone")
@@ -15,7 +15,7 @@ open class BasicMobile(val type: String){
     fun powerOff() = println("Shutting Down")
     open fun display() = println("Simple Mobile Display")
 }
-class samsumg():BasicMobile("smartphone"){
+class Samsumg():BasicMobile("smartphone"){
     override val name: String ="samsung"
     override fun display() = println("$name Mobile Display")
     override val size: Int = 6
