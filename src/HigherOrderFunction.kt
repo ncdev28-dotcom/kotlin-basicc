@@ -4,7 +4,7 @@ fun main(){
 fun Sum(a: Double, b: Double): Double{
     return a+b
 }
-fun Calculater(a: Double,b: Double,addfn:(Double, Double)-> Double){
-    val result=addfn(a,b)
+fun Calculater(a: Double, b: Double, addon:(Double, Double)-> Double){
+    val result=addon(a,b)
     println(result)
 }
